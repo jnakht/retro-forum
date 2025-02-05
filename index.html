@@ -15,8 +15,8 @@
 
 </head>
 <body>
-    <header class=" w-10/12 mx-auto font-mulish">
-        <nav class="mt-[20px]">
+    <header class="w-[90%] lg:w-10/12 mx-auto font-mulish">
+        <nav class="mt-[20px] ">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -70,18 +70,18 @@
         <!-- bannner section -->
         <section class="mt-12">
           <!-- banner container -->
-            <div class="h-[550px] border-2 border-green-500 bg-[url('images/bgbanner.png')] bg-no-repeat bg-[#12132D] bg-contain bg-bottom rounded-[35px] flex justify-around items-center" >
+            <div class="lg:h-[550px]   bg-[url('images/bgbanner.png')] bg-no-repeat bg-[#12132D] bg-cover  lg:bg-contain bg-bottom rounded-[35px] flex flex-col lg:flex-row gap-6 lg:gap-0 justify-around lg:items-center pl-3 lg:pl-0 pr-3 lg:pr-0" >
                 <!-- left div -->
-                <div class="w-[40%] flex flex-col gap-5">
-                    <h1 class="text-[#FFF] text-6xl font-black">Welcome to the <span class="bg-gradient-to-r from-[#797DFC] to-[rgba(121,125,252,0.3)] bg-clip-text text-transparent">ReTro</span> Forum</h1>
-                    <p class="text-[#FFFFFFCC] text-xl font-medium">Share your favorite opinion and win and wp forum coffee mug!</p>
-                    <label class="border-2 border-red-500 flex justify-between items-center bg-white rounded-[50px] p-[6px] w-[400px]">
+                <div class="lg:w-[40%] flex flex-col gap-5">
+                    <h1 class="text-[#FFF] text-4xl lg:text-6xl font-black mt-6 lg:mt-0">Welcome to the <span class="bg-gradient-to-r from-[#797DFC] to-[rgba(121,125,252,0.3)] bg-clip-text text-transparent">ReTro</span> Forum</h1>
+                    <p class="text-[#FFFFFFCC] lg:text-xl font-medium">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <label class=" flex justify-between items-center bg-white rounded-[16px] lg:rounded-[50px] p-[3px] lg:p-[6px] lg:w-[400px]">
                         <input type="text" name="" id="" class=" bg-white text-[#03071280] ml-5 h-[35px] border-none outline-none">
-                        <button class="btn bg-[#797DFC] rounded-[56px] text-white text-xl font-bold w-[120px]">Search</button>
+                        <button class="btn bg-[#797DFC] lg:rounded-[56px] text-white lg:text-xl lg:font-bold lg:w-[120px] ">Search</button>
                     </label>
                 </div>
                 <!-- right div -->
-                <div class="bg-white rounded-[32px] w-[25%] h-[280px] flex flex-col justify-center pl-10 pr-10 text-[#12132DCC] text-2xl font-medium gap-3">
+                <div class="bg-white rounded-[10px] lg:rounded-[32px] w-[70%] lg:w-[25%] h-[180px] lg:h-[280px] flex flex-col justify-center pl-3 lg:pl-10 pr-3 lg:pr-10 text-[#12132DCC] lg:text-2xl font-medium gap-3 mb-3 lg:mb-0">
                     <div class="flex justify-between"><h3>Registered Users</h3> <h3>01</h3></div>
                     <div class="flex justify-between"><h3>Forum</h3> <h3>05</h3></div>
                     <div class="flex justify-between"><h3>Topics</h3> <h3>01</h3></div>
@@ -91,7 +91,11 @@
         </section>
     </header>
     <main>
-        
+        <!-- let's discuss section -->
+         <section class="w-[90vw] lg:w-10/12 mx-auto text-center mt-10 lg:mt-24 mb-10 lg:mb-12">
+              <h1 class="text-[#12132D] font-mulish text-3xl lg:text-[40px] font-black">Let’s Discuss</h1>
+              <p class="text-[#12132D99] font-inter text-lg font-normal mt-4 lg:mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+         </section>
     </main>
     <footer>
 
