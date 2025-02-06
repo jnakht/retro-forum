@@ -1,16 +1,28 @@
 
 
-const loadData = async () => {
-    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
-    const data = await res.json();
+const loadData = async (inputText, isSearched) => {
+    let res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
+    let data = await res.json();
+    console.log('this is disting misting input text:', inputText);
+    if (isSearched) {
+        res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${inputText}`);
+        data = await res.json();
+    }
     console.log(data);
     showData(data.posts);
 }
 loadData();
 
+const handleSearchButton = () => {
+    const inputContent = document.getElementById('input-field');
+    const inputText = inputContent.value;
+    loadData(inputText, true);
+}
+
 
 const showData = (allData) => {
     const dataContainer = document.getElementById('all-posts-card-container');
+    dataContainer.textContent = '';
    
     
     let id = '';
