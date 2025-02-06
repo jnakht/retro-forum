@@ -124,6 +124,11 @@ const handleBookmarkIconClick = (id, titleId, viewCountId) => {
     // contents where to set
     const bookmarkContainer = document.getElementById('bookmark-container');
 
+    // bookmark count
+    const bookmarkCountElement = document.getElementById('bookmark-count');
+    let bookmarkCount = bookmarkCountElement.innerText;
+    bookmarkCount++;
+
     // new div
     const newDiv = document.createElement('div');
     newDiv.innerHTML = `
@@ -139,7 +144,7 @@ const handleBookmarkIconClick = (id, titleId, viewCountId) => {
     
     
     `;
-
+    bookmarkCountElement.innerText = bookmarkCount;
     bookmarkContainer.appendChild(newDiv);
 
 
