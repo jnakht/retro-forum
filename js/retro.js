@@ -7,9 +7,13 @@ const loadData = async (inputText, isSearched) => {
     if (isSearched) {
         res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${inputText}`);
         data = await res.json();
+       
     }
-    console.log(data);
-    showData(data.posts);
+    loaderSpinnerFunction(data.posts);
+    // console.log(data);
+    // showData(data.posts);
+    const dataContainer = document.getElementById('all-posts-card-container');
+    dataContainer.textContent = '';
 }
 loadData();
 
@@ -19,8 +23,18 @@ const handleSearchButton = () => {
     loadData(inputText, true);
 }
 
-
+const loaderSpinnerFunction = async (allPosts) => {
+    // loader or spinner
+    const loaderSpinner = document.getElementById('loader-spinner');
+    loaderSpinner.classList.remove('hidden');
+    setTimeout(() => {
+        loaderSpinner.classList.add('hidden');
+        showData(allPosts);
+    }, 2000);
+}
 const showData = (allData) => {
+    
+
     const dataContainer = document.getElementById('all-posts-card-container');
     dataContainer.textContent = '';
    
