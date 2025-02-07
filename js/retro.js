@@ -50,14 +50,14 @@ const showData = (allData) => {
         console.log(id, activeStatus);
         const newDiv = document.createElement('div');
     newDiv.innerHTML = `
-                    <div class="flex flex-col lg:flex-row gap-10 rounded-[24px]   border-2 border-green-500 h-auto lg:h-[270px] bg-[#797DFC1A] lg:pl-10 lg:pr-10 lg:pt-10">
+                    <div class="flex flex-col lg:flex-row gap-10 rounded-[24px]    h-auto lg:h-[270px] bg-[#797DFC1A] lg:pl-10 lg:pr-10 lg:pt-10">
                         <!-- left side image  -->
-                         <div class="relative border-2 border-red-500">
+                         <div class="relative">
                             <img class="w-[72px] rounded-2xl" src="${data.image}" alt="">
                             <div id="${data.id}" class="h-[18px] w-[18px]  absolute -right-1 -top-1 rounded-full"></div>
                          </div>
                          <!-- right side contents -->
-                          <div class="flex flex-col w-full  border-2 border-red-500">
+                          <div class="flex flex-col w-full">
                               <div class="flex gap-8 text-[#12132DCC] font-inter text-sm font-medium">
                                   <h3># ${data.category}</h3>
                                   <h3>Author : ${data?.author?.name || 'Anonymous'}</h3>
@@ -193,7 +193,7 @@ const showLatestPosts = (allPosts) => {
               </div>
               <h2 class="text-[#12132D] font-mulish text-lg font-extrabold">${post?.title}</h2>
               <p class="text-[#12132D99] font-mulish text-base font-normal">${post?.description}</p>
-              <div class="flex border-2 border-red-500 gap-4">
+              <div class="flex  gap-4">
                   <img class="w-[44px] rounded-[44px]" src="${post?.profile_image}" alt="">
                   <div class="flex flex-col">
                       <h3 class="text-[#12132D] font-mulish text-base font-bold">${post?.author?.name}</h3>
