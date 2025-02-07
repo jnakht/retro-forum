@@ -50,7 +50,7 @@ const showData = (allData) => {
         console.log(id, activeStatus);
         const newDiv = document.createElement('div');
     newDiv.innerHTML = `
-                    <div class="flex gap-10 rounded-[24px]   border-2 border-green-500 h-[270px] bg-[#797DFC1A] pl-10 pr-10 pt-10">
+                    <div class="flex flex-col lg:flex-row gap-10 rounded-[24px]   border-2 border-green-500 h-auto lg:h-[270px] bg-[#797DFC1A] lg:pl-10 lg:pr-10 lg:pt-10">
                         <!-- left side image  -->
                          <div class="relative border-2 border-red-500">
                             <img class="w-[72px] rounded-2xl" src="${data.image}" alt="">
