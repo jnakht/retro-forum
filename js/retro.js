@@ -165,11 +165,11 @@ const showLatestPosts = (allPosts) => {
 
     allPosts.forEach(post => {
         const newDiv = document.createElement('div');
-        newDiv.classList.add('w-[90%] lg:w-full');
+        newDiv.classList.add('w-[90%]', 'lg:w-auto');
         newDiv.innerHTML = `
         
                 <div class="">
-          <div class="card bg-base-100 w-96 h-[550px]  shadow-xl border border-solid border-[#12132D26]">
+          <div class="card bg-base-100 max-w-96 h-[550px]  shadow-xl border border-solid border-[#12132D26]">
             <figure>
               <img
                 src="${post.cover_image}"
