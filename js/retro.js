@@ -52,7 +52,7 @@ const showData = (allData) => {
     newDiv.innerHTML = `
                     <div class="flex flex-col lg:flex-row gap-10 rounded-[24px]   border-2 border-green-500 h-auto lg:h-[270px] bg-[#797DFC1A] lg:pl-10 lg:pr-10 lg:pt-10">
                         <!-- left side image  -->
-                         <div class="relative border-2 border-red-500">
+                         <div class="max-w-min relative border-2 border-red-500">
                             <img class="w-[72px] rounded-2xl" src="${data.image}" alt="">
                             <div id="${data.id}" class="h-[18px] w-[18px]  absolute -right-1 -top-1 rounded-full"></div>
                          </div>
