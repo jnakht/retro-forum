@@ -167,7 +167,7 @@ const showLatestPosts = (allPosts) => {
         const newDiv = document.createElement('div');
         newDiv.innerHTML = `
         
-                <div class="">
+                <div class="max-w-[90%]">
           <div class="card bg-base-100 w-96 h-[550px]  shadow-xl border border-solid border-[#12132D26]">
             <figure>
               <img
